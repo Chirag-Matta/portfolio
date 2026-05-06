@@ -41,10 +41,12 @@
   <!-- aos cdn -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- stylesheet -->
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- google fonts-->
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps&family=Inter:wght@400;700;800&display=swap" />
 
 <body class="body">
   <audio loop="" id="audioPlayer" style="display: none">
@@ -61,7 +63,7 @@
       <div class="hey">Hey!</div>
       <div class="logo" tabindex="0" aria-label="Chirag Matta logo">
         <div class="logo-top">
-          <img src="src/png/avatar.png" alt="animation-head" id="nav-avatar"/>
+          <img src="src/png/avatar2.png" alt="animation-head" id="nav-avatar"/>
         </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
@@ -136,121 +138,39 @@
     <!-- mobile toggle menu ends -->
 
     <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">W</p>
-          <p class="jello">e</p>
-          <p class="jello">l</p>
-          <p class="jello">c</p>
-          <p class="jello">o</p>
-          <p class="jello">m</p>
-          <p class="jello">e</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">C</p>
-          <p class="jello">h</p>
-          <p class="jello">i</p>
-          <p class="jello">r</p>
-          <p class="jello">a</p>
-          <p class="jello">g</p>
-          &nbsp;
-          <p class="jello">M</p>
-          <p class="jello">a</p>
-          <p class="jello">t</p>
-          <p class="jello">t</p>
-          <p class="jello">a</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">I</p>
-          </div>
-          <div>
-            <p class="jello">C</p>
-            <p class="jello">o</p>
-            <p class="jello">d</p>
-            <p class="jello">e</p>
-            <p class="jello">,</p>
-          </div>
-          <div>
-            <p class="jello">P</p>
-            <p class="jello">r</p>
-            <p class="jello">o</p>
-            <p class="jello">d</p>
-            <p class="jello">u</p>
-            <p class="jello">c</p>
-            <p class="jello">t</p>
-            <p class="jello">s</p>
-          </div>
-          <div>
-            <p class="jello">E</p>
-            <p class="jello">v</p>
-            <p class="jello">o</p>
-            <p class="jello">l</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>  
-          </div>
-        </article>
-        <!-- Decorative annotation - Positioned relative to hero content -->
-        <div class="hero-annotation" data-aos="fade-up" data-aos-delay="1000">
-          <svg class="hero-annotation-arrow" viewBox="0 0 150 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="rgba(180, 130, 255, 1)" />
-                <stop offset="100%" stop-color="rgba(107, 197, 248, 1)" />
-              </linearGradient>
-            </defs>
-            <path d="M10 20 C 30 15, 60 20, 120 70" stroke="url(#arrowGradient)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M110 65 L120 70 L125 60" stroke="url(#arrowGradient)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <div class="hero-annotation-text">Omw to becoming the cheat code the tech world needs <span class="hero-annotation-tag">&lt;/&gt;</span></div>
+      <div class="hero-main-content" data-aos="fade-up">
+        <div class="avatar-wrapper">
+          <div class="avatar-backing-disc"></div>
+          <div class="avatar-clipper">
+            <img src="src/png/avatar2.png" alt="Chirag" class="avatar-img">
           </div>
         </div>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600" style="font-family: monospace;">
-          From idea to production — and beyond
-          <br /><br>
-          I design, build, and ship production-grade backends, turning complex problems into simple, reliable systems.
-          <br />
-        </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:mattachirag980@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
-            </div>
-
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
-            </div>
-          </div>
-          <!-- setting div ends -->
+        <div class="hero-headings">
+          <h1 class="heading-line-1">Hey, I'm <span class="name">Chirag</span> <span class="sparkle">✦</span></h1>
+          <h1 class="heading-line-2">A Software Developer</h1>
         </div>
-        <!-- contact-btn-div -->
       </div>
-     
+      
+      <p class="bio-paragraph" data-aos="fade-up" data-aos-delay="200">
+        A <b>fullstack developer</b> with solid foundations in <b>design.</b><br>
+        passionate about crafting seamless user experiences I thrive at the intersection of creativity and functionality.
+      </p>
+
+      <div class="cta-row" data-aos="fade-up" data-aos-delay="400">
+        <a href="#contact" class="cta-pill" aria-label="Contact Me">
+          <i class="fa-solid fa-at"></i> Contact Me
+        </a>
+        <a href="#projects" class="cta-pill" aria-label="View Projects">
+          <i class="fa-solid fa-shapes"></i> View Projects
+        </a>
+        <div class="vertical-separator"></div>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://dribbble.com" target="_blank" class="social-icon" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
     </section>
     <!-- landing page ends here -->
     
@@ -391,49 +311,21 @@
         <p class="sectionHeadingP"></p>
       </div>
       <div class="project-boxes-div">
-        <div data-aos="fade-up" class="project-box-wrapper">
-          <div class="project-box project-box2" id="project-box2">
-            <div class="info-div">
-              <img src="src/png/gpt.jpg" alt="pexelicon website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">LLMs See Further</article>
-              <p class="ProjectDescription">
-                Computing Approaches to Extend Context Window in LLMs (TinyLLama, Llama, Mistral)
-              </p>
-              <div class="project-buttons">
-                <a href="https://github.com/mattachirag/LLMs-See-Further/" target="_blank" class="github-redirect">
-                  <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="https://github.com/mattachirag/LLMs-See-Further/blob/main/Report.pdf" target="_blank" class="cta"
-                  aria-label="Visit Pexelicons Live">
-                  <span>Link to Paper</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/png/llm.jpg" alt="Pexelicon website preview image" />
-            </div>
-          </div>
-        </div>
-
         <!-- 2nd Project -->
         <div class="project-box-wrapper" data-aos="fade-up">
           <div class="project-box project-box5" id="project-box5">
             <div class="info-div">
-              <img src="src/png/gan.jpg" alt="comickaze website favicon"
+              <img src="src/png/stratify.png" alt="Stratify website favicon"
                 class="faviconforProject" />
-              <article class="ProjectHeading">Neural Enhance</article>
+              <article class="ProjectHeading">Stratify</article>
               <p class="ProjectDescription">
-                Image Super Resolution: Generating Upscaled images using Super-Resolution GANs (SR-GANs) that looks photo-realistic.
+                Real-time user segmentation and A/B experimentation engine for E-commerce applications. Define JSON rule trees, run multi-variant experiments, and react to behavioral events as they happen.
               </p>
               <div class="project-buttons">
-                <a href="https://github.com/mattachirag/Image-Super-Resolution" target="_blank" class="github-redirect">
+                <a href="https://github.com/Chirag-Matta/Stratify" target="_blank" class="github-redirect">
                   <img src="src/svg/github.svg" alt="github redirect button" />
                 </a>
-                <a href="https://colab.research.google.com/drive/1OAoQFVhRd3WLuBGrZepeZdMcboiAN7w3" target="_blank" class="cta" aria-label="Visit Comickaze live">
+                <a href="https://github.com/Chirag-Matta/Stratify" target="_blank" class="cta" aria-label="Visit Stratify live">
                   <span>Live view</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
                     <path d="M1,5 L11,5"></path>
@@ -443,7 +335,7 @@
               </div>
             </div>
             <div class="image-div">
-              <img src="src/png/srgan.jpeg" alt="comickaze website preview image" />
+              <img src="src/png/stratify.png" alt="comickaze website preview image" />
             </div>
           </div>
         </div>
@@ -452,21 +344,20 @@
         <div class="project-box-wrapper" data-aos="fade-up">
           <div class="project-box project-box2" id="project-box2">
             <div class="info-div">
-              <img src="src/webp/pexelicon-favicon.webp" alt="Aquaregia website favicon"
-                class="faviconforProjectAquaregia" />
-              <article class="ProjectHeading">Neural Art</article>
+              <img src="src/webp/pexelicon-favicon.webp" alt="CodeGuardian website favicon"
+                class="faviconforProjectCodeGuardian" />
+              <article class="ProjectHeading">CodeGuardian</article>
               <p class="ProjectDescription">
-                Real Time Neural Style Transfer: A style transfer application that 
-                can be used on videos and real-time broadcasts.
+                Multi-agent system that reviews pull requests for security vulnerabilities, logic bugs, N+1 queries, and code quality with automatic API key rotation and parallel execution.
               </p>
               <div class="project-buttons">
-                <a href="https://github.com/mattachirag/Real-Time-NST" target="_blank" class="github-redirect"
-                  aria-label="Visit Aquaregia on GitHub">
+                <a href="https://github.com/Chirag-Matta/CodeGuardian" target="_blank" class="github-redirect"
+                  aria-label="Visit CodeGuardian on GitHub">
                   <img src="src/svg/github.svg" alt="github redirect button" />
                 </a>
-                <a href="https://github.com/mattachirag/Real-Time-NST/blob/main/Neural_Art.pdf" target="_blank" class="cta"
-                  aria-label="Visit Aquaregia Live">
-                  <span>Link to Paper</span>
+                <a href="https://code-guardian-six.vercel.app/" target="_blank" class="cta"
+                  aria-label="Visit CodeGuardian Live">
+                  <span>Live view</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -475,7 +366,7 @@
               </div>
             </div>
             <div class="image-div">
-              <img src="src/png/nst.png" alt="Aquaregia website preview image" />
+              <img src="src/png/code-guardian.png" alt="CodeGuardian website preview image" />
             </div>
           </div>
         </div>
@@ -484,18 +375,18 @@
           <div class="project-box project-box4" id="project-box4">
             <div class="info-div">
               <img src="src/png/nn.png" alt="Qr generator website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">Neural LOLgorithm</article>
+              <article class="ProjectHeading">OutboundOS</article>
               <p class="ProjectDescription">
-                Deep Learning for Multi-Modal Comedy Data
+                Automated Job Application Pipeline; Scrapes Wellfound, HN Who's Hiring, Naukri, and LinkedIn posts, filters companies with a Groq LLM, finds decision-maker contacts (HR, SDE, Founder), enriches their emails via Apollo.io, and fires personalised cold outreach through Gmail; all with zero manual effort.
               </p>
               <div class="project-buttons">
-                <a href="https://github.com/mattachirag/Computational-Humor/" target="_blank" class="github-redirect"
-                  aria-label="Visit qr generator on github">
+                <!-- <a href="https://github.com/Chirag-Matta/OutboundOS/" target="_blank" class="github-redirect"
+                  aria-label="Visit outbound os on github">
                   <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="https://github.com/mattachirag/Computational-Humor/blob/main/NeLOL.pdf" target="_blank" class="cta"
-                  aria-label="Visit qr generator live">
-                  <span>Link to Paper</span>
+                </a> -->
+                <a href="https://github.com/Chirag-Matta/OutboundOS" target="_blank" class="cta"
+                  aria-label="Visit outbound os live">
+                  <span>Link to Github</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -504,70 +395,11 @@
               </div>
             </div>
             <div class="image-div">
-              <img src="src/png/lol.png" alt="qr generator website preview image" />
+              <img src="src/png/outboundoss.svg" alt="qr generator website preview image" />
             </div>
           </div>
         </div>
 
-        <!-- ---------------------- -->
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box1" id="project-box1">
-            <div class="info-div">
-              <img src="src/png/reddit.png" class="faviconforProject" />
-              <article class="ProjectHeading">Reddit Data API</article>
-              <p class="ProjectDescription">
-                ETL Pipeline Using Airflow & Reddit API
-              </p>
-              <div class="project-buttons">
-                <a href="https://github.com/mattachirag/ETL-Pipelines" target="_blank" class="github-redirect">
-                  <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="" target="_blank" class="cta">
-                  <span>Live view</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/png/reddit.jpg" alt="Axocean website preview image" />
-            </div>
-          </div>
-        </div>
-
-
-        <!-- ---------------------- -->
-        <div class="project-box-wrapper" data-aos="fade-up">
-          <div class="project-box project-box3" id="project-box3">
-            <div class="info-div">
-              <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
-              <article class="ProjectHeading">Netflix Clone</article>
-              <p class="ProjectDescription">
-                A webpage to categorize the shows to redirect user to watch
-                the show.
-              </p>
-              <div class="project-buttons">
-                <a href="https://github.com/mattachiragNetflix-clone" target="_blank" class="github-redirect"
-                  aria-label="Visit Netflix clone on GitHub">
-                  <img src="src/svg/github.svg" alt="github redirect button" />
-                </a>
-                <a href="https://react-project-20.netlify.app/" target="_blank" class="cta"
-                  aria-label="Visit netflix clone live">
-                  <span>Live view</span>
-                  <svg viewBox="0 0 13 10" height="10px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="image-div">
-              <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
-            </div>
-          </div>
-        </div>         
         <!-- ---------------------- -->
       </div>
     </div>
@@ -623,7 +455,7 @@
           </div>
         </div>
         <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar.png " class="footer-avatar-img" id="footer-wala-avatar"/>
+          <img src="src/png/footer-avatar2.png " class="footer-avatar-img" id="footer-wala-avatar"/>
           <div class="footer-avatar-face">
             <div class="footer-avatar-eye footer-left-eye">
               <div class="footer-pupil"></div>
