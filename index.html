@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="style.css" />
   <!-- google fonts-->
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps&family=Inter:wght@400;700;800&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps&family=Anton&family=Inter:wght@400;700;800&display=swap" />
 
 <body class="body">
   <audio loop="" id="audioPlayer" style="display: none">
@@ -174,46 +174,45 @@
     </section>
     <!-- landing page ends here -->
     
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
+    <section class="about-section-container" id="about">
+      <div class="warp-speed-bg">
+        <canvas id="warp-canvas"></canvas>
+      </div>
+
+      <div class="about-anchor-text">
+        <span>ABOUT</span>
+        <span>ME</span>
+      </div>
+
+      <div class="about-cards-layout">
+        <div class="about-card card-1" data-aos="fade-up">
+          <div class="card-header">
+            <h3 class="card-title">WHO I AM</h3>
+            <span class="card-number">[01]</span>
+          </div>
+          <p class="card-body">
+            Hey, I'm Chirag, a techie passionate about building scalable backend systems and smart, real-world solutions. I'm a 2025 grad from IIIT Raipur in Computer Science.
+          </p>
         </div>
 
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0" style="font-family: monospace;">
-              Hey, I'm Chirag, a techie passionate about building scalable backend systems and smart, real-world solutions. I'm a 2025 grad from IIIT Raipur in Computer Science.
-
-              I started out in DevOps, got deep into infra and backend systems, and that&rsquo;s where I picked up the itch to build products that scale and actually matter.
-            </p>
-            <br>
-            <p tabindex="0" style="font-family: monospace;">
-             When I'm on DND, I like to play games 🎮, practice my dribbles on the football field ⚽, play the guitar 🎸, or have refreshing detours with family and friends</p>
-            <br>
-            <p tabindex="0" style="font-family: monospace;">
-              Developing cutting-edge, scalable features with practical applications is my passion. I enjoy pushing limits, keeping up with the most recent developments in tech to harbour new skills and increase my productivity
-            </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-          </svg>
+        <div class="about-card card-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <h3 class="card-title">WHAT I DO</h3>
+            <span class="card-number">[02]</span>
+          </div>
+          <p class="card-body">
+            I started out in DevOps, got deep into infra and backend systems, and that's where I picked up the itch to build products that scale and actually matter.
+          </p>
         </div>
 
-        <div class="text">Resume</div>
-      </button>
+        <div class="about-card card-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-header">
+            <h3 class="card-title">MY APPROACH</h3>
+            <span class="card-number">[03]</span>
           </div>
-
-          <div class="dp" data-aos="fade-up">
-            <img src="src/png/me4.jpg" alt="Chirag Matta" tabindex="0" aria-label="image of Chirag" />
-          </div>
+          <p class="card-body">
+            Developing cutting-edge, scalable features with practical applications is my passion. I enjoy pushing limits, keeping up with the most recent developments in tech.
+          </p>
         </div>
       </div>
     </section>

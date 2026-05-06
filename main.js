@@ -131,3 +131,79 @@ const mouseMove = (e) => {
   };
 window.addEventListener("mousemove", mouseMove),
   window.addEventListener("resize", windowResize);
+
+// --- Warp Speed Canvas Animation ---
+const canvas = document.getElementById("warp-canvas");
+if (canvas) {
+  const ctx = canvas.getContext("2d");
+  let width, height;
+  let stars = [];
+  const numStars = 400;
+  const speed = 15;
+
+  function initCanvas() {
+    width = canvas.width = window.innerWidth;
+    const aboutContainer = document.querySelector(".about-section-container");
+    height = canvas.height = aboutContainer ? aboutContainer.offsetHeight : window.innerHeight;
+    stars = [];
+    for (let i = 0; i < numStars; i++) {
+      stars.push(new Star());
+    }
+  }
+
+  class Star {
+    constructor() {
+      this.reset();
+    }
+    reset() {
+      this.x = (Math.random() - 0.5) * width * 2;
+      this.y = (Math.random() - 0.5) * height * 2;
+      this.z = Math.random() * width;
+      this.pz = this.z;
+    }
+    update() {
+      this.z -= speed;
+      if (this.z < 1) {
+        this.reset();
+        this.pz = this.z;
+      }
+    }
+    draw() {
+      const cx = width / 2;
+      const cy = height / 2;
+      
+      const sx = (this.x / this.z) * width + cx;
+      const sy = (this.y / this.z) * height + cy;
+      
+      const px = (this.x / this.pz) * width + cx;
+      const py = (this.y / this.pz) * height + cy;
+
+      this.pz = this.z;
+
+      ctx.beginPath();
+      ctx.moveTo(px, py);
+      ctx.lineTo(sx, sy);
+      
+      const depth = 1 - this.z / width;
+      ctx.strokeStyle = `rgba(255, 255, 255, ${depth})`;
+      ctx.lineWidth = depth * 3;
+      ctx.stroke();
+    }
+  }
+
+  function animateWarp() {
+    ctx.fillStyle = "rgba(13, 13, 20, 0.3)"; /* Match dark mode background */
+    ctx.fillRect(0, 0, width, height);
+    
+    stars.forEach(star => {
+      star.update();
+      star.draw();
+    });
+    
+    requestAnimationFrame(animateWarp);
+  }
+
+  window.addEventListener("resize", initCanvas);
+  initCanvas();
+  animateWarp();
+}

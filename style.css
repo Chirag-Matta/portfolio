@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Wister';
+  src: url('src/fonts/Wister-Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PrettyWild';
+  src: url('src/fonts/PrettyWildDemo-8vK3K.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #labelforsetting,
 #labelforvisualmode,
 #switchforvisualmode:checked + #labelforvisualmode {
@@ -611,7 +625,7 @@ noscript {
 }
 
 .heading-line-1 .name {
-  color: var(--color-light-purple);
+  color: rgba(116, 69, 119, 0.6); /* Translucent #744577 */
 }
 
 .heading-line-1 .sparkle {
@@ -622,7 +636,7 @@ noscript {
 .heading-line-2 {
   font-size: 6rem;
   font-weight: 800;
-  background: linear-gradient(to right, var(--color-light-purple), #5b3fa1); /* Lightened dark end for visibility */
+  background: linear-gradient(to right, #744577, #547A95); /* Lightened dark end for visibility */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
@@ -1012,7 +1026,6 @@ noscript {
   flex-direction: column;
   padding-top: 200px;
 }
-.about-section,
 .projects-section-div,
 .skills-section {
   width: 60%;
@@ -1060,38 +1073,178 @@ noscript {
     var(--static-heading-gradient-pink)
   );
 }
-.info-dp-section {
+/* --- NEW ABOUT SECTION STYLES --- */
+.about-section-container {
+  position: relative;
   width: 100%;
+  min-height: 100vh;
   display: flex;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  overflow: hidden;
+  padding: 100px 5%;
 }
-.about-info {
-  width: 60%;
+
+.warp-speed-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+}
+
+#warp-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.about-header-labels {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Fira Code', monospace;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about-anchor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-}
-.about-info p {
-  line-height: 25px;
-}
-.dp {
-  width: 40%;
-  display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+  line-height: 0.8;
+  opacity: 0.9;
+}
+
+.about-anchor-text span {
+  font-family: 'Wister', 'Anton', sans-serif;
+  font-size: 15vw;
+  color: #744577; /* Burnt orange/red */
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -2px;
+}
+
+.about-cards-layout {
   position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.dp::before {
-  box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent;
+
+.about-card {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  width: 320px;
+  position: absolute;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
-.dp::after {
-  box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff;
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 69, 0, 0.3);
 }
-.dp:hover::after {
-  transform: translate(20px, 20px);
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
 }
-.dp:hover::before {
-  transform: translate(-20px, -20px);
+
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
 }
+
+.card-number {
+  font-family: 'Fira Code', monospace;
+  color: #744577;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  font-family: 'PrettyWild', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Asymmetrical Layout for Desktop */
+@media (min-width: 1024px) {
+  .about-cards-layout {
+    position: relative;
+  }
+  .card-1 {
+    top: 50px;
+    left: 20%;
+  }
+  .card-2 {
+    top: 250px;
+    right: 15%;
+  }
+  .card-3 {
+    bottom: 50px;
+    left: 10%;
+  }
+}
+
+/* Fallback/Mobile Layout */
+@media (max-width: 1023px) {
+  .about-cards-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: static;
+  }
+  .about-card {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  .about-anchor-text span {
+    font-size: 25vw;
+  }
+}
+
 .skills-section-container {
   padding-top: 150px;
   width: 100%;
