@@ -626,6 +626,57 @@ noscript {
 
 .heading-line-1 .name {
   color: rgba(116, 69, 119, 0.6); /* Translucent #744577 */
+  display: inline-block; /* Required for transform */
+  animation: kinetic-flicker 2.58s forwards step-end;
+}
+
+@keyframes kinetic-flicker {
+  /* BURST 1 */
+  0.00% { text-transform: none; font-weight: 600; color: rgba(116, 69, 119, 0.6); transform: none; letter-spacing: normal; }
+  3.23% { text-transform: uppercase; font-weight: 500; color: #cdd2ff; transform: none; letter-spacing: normal; }
+  6.45% { text-transform: lowercase; font-weight: 600; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  9.68% { text-transform: none; font-weight: 500; color: #b0b7c6; transform: none; letter-spacing: normal; }
+  12.90% { text-transform: uppercase; font-weight: 500; color: #f4efe6; transform: none; letter-spacing: normal; }
+  16.13% { text-transform: lowercase; font-weight: 500; color: #c8a2c8; transform: none; letter-spacing: normal; }
+  19.35% { text-transform: none; font-weight: 600; color: #b0e0e6; transform: none; letter-spacing: normal; }
+
+  /* BURST 2 */
+  22.58% { text-transform: uppercase; font-weight: 500; color: #cdd2ff; transform: none; letter-spacing: normal; }
+  25.81% { text-transform: lowercase; font-weight: 500; color: #f4efe6; transform: none; letter-spacing: -0.05em; }
+  29.03% { text-transform: none; font-weight: 600; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  32.26% { text-transform: uppercase; font-weight: 500; color: rgba(116, 69, 119, 0.8); transform: none; letter-spacing: 0.05em; }
+  35.48% { text-transform: lowercase; font-weight: 500; color: #b0b7c6; transform: none; letter-spacing: normal; }
+
+  /* BURST 3 */
+  38.71% { text-transform: none; font-weight: 500; color: #8f9779; transform: none; letter-spacing: normal; }
+  41.94% { text-transform: uppercase; font-weight: 600; color: #f4efe6; transform: none; letter-spacing: normal; }
+  45.16% { text-transform: lowercase; font-weight: 500; color: #c8a2c8; transform: none; letter-spacing: 0.05em; }
+  48.39% { text-transform: none; font-weight: 600; color: #cdd2ff; transform: none; letter-spacing: normal; }
+  51.61% { text-transform: uppercase; font-weight: 500; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  54.84% { text-transform: lowercase; font-weight: 500; color: rgba(116, 69, 119, 0.8); transform: none; letter-spacing: normal; }
+  58.06% { text-transform: none; font-weight: 600; color: #b0b7c6; transform: none; letter-spacing: -0.05em; }
+  61.29% { text-transform: uppercase; font-weight: 500; color: #b0e0e6; transform: none; letter-spacing: normal; }
+
+  /* BURST 4 */
+  64.52% { text-transform: lowercase; font-weight: 500; color: #f4efe6; transform: none; letter-spacing: normal; }
+  67.74% { text-transform: uppercase; font-weight: 600; color: #c8a2c8; transform: none; letter-spacing: normal; }
+  70.97% { text-transform: none; font-weight: 600; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  74.19% { text-transform: lowercase; font-weight: 500; color: #cdd2ff; transform: none; letter-spacing: 0.05em; }
+  77.42% { text-transform: uppercase; font-weight: 500; color: #8f9779; transform: none; letter-spacing: normal; }
+  80.65% { text-transform: none; font-weight: 600; color: rgba(116, 69, 119, 0.8); transform: none; letter-spacing: normal; }
+
+  /* BURST 5 - CLIMAX */
+  83.87% { text-transform: uppercase; font-weight: 600; color: #f4efe6; transform: none; letter-spacing: normal; }
+  85.48% { text-transform: lowercase; font-weight: 500; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  87.10% { text-transform: uppercase; font-weight: 500; color: #cdd2ff; transform: none; letter-spacing: normal; }
+  88.71% { text-transform: none; font-weight: 600; color: #c8a2c8; transform: none; letter-spacing: -0.05em; }
+  90.32% { text-transform: lowercase; font-weight: 500; color: #8f9779; transform: none; letter-spacing: normal; }
+  91.94% { text-transform: uppercase; font-weight: 500; color: #b0b7c6; transform: none; letter-spacing: 0.05em; }
+  93.55% { text-transform: none; font-weight: 600; color: #f4efe6; transform: none; letter-spacing: normal; }
+  95.16% { text-transform: lowercase; font-weight: 500; color: rgba(116, 69, 119, 0.8); transform: none; letter-spacing: normal; }
+  96.77% { text-transform: uppercase; font-weight: 500; color: #b0e0e6; transform: none; letter-spacing: normal; }
+  98.39% { text-transform: none; font-weight: 600; color: #d1a3a4; transform: none; letter-spacing: normal; }
+  100% { text-transform: none; font-weight: 800; color: rgba(116, 69, 119, 0.6); transform: none; letter-spacing: normal; }
 }
 
 .heading-line-1 .sparkle {
