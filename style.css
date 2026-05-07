@@ -516,7 +516,7 @@ noscript {
 }
 .landing-page-container {
   width: 100%;
-  height: 100vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center horizontally */
@@ -525,6 +525,7 @@ noscript {
   position: relative;
   overflow: hidden;
   background-color: var(--color-dark-mode);
+  padding-bottom: 50px;
 }
 
 /* Ambient Blobs */
@@ -1068,15 +1069,7 @@ noscript {
 .resume-btn:active {
   transform: translate(2px, 2px);
 }
-.about-section-container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 200px;
-}
+
 .projects-section-div,
 .skills-section {
   width: 60%;
@@ -1128,13 +1121,13 @@ noscript {
 .about-section-container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
   overflow: hidden;
-  padding: 100px 5%;
+  padding: 60px 5%;
 }
 
 .warp-speed-bg {
