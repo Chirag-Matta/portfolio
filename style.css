@@ -1070,7 +1070,14 @@ noscript {
   transform: translate(2px, 2px);
 }
 
-.projects-section-div,
+.projects-section-div {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
 .skills-section {
   width: 60%;
   display: flex;
@@ -1445,7 +1452,22 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 0;
+}
+.projects-vertical-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Wister', 'Anton', sans-serif;
+  font-size: 10rem;
+  font-style: italic;
+  color: #744577;
+  opacity: 0.7;
+  height: fit-content;
+  position: sticky;
+  top: 150px;
+  letter-spacing: 5px;
+  pointer-events: none;
+  z-index: 5;
 }
 .cta:hover:before,
 .project-box-wrapper {
