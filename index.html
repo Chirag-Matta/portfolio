@@ -82,7 +82,7 @@
 
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
+              &#60;/SkillDNA&#62;
             </a>
           </li>
 
@@ -222,98 +222,85 @@
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Tech Stack
-            &#62;
+            &#60;/SkillDNA&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
 
-        <div class="skills-wrapper">
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <div class="skill-icon">
-                <img src="./src/png/py.png" alt="Python logo" />
-              </div>
-              <span class="skill-name">Python</span>
-            </li>
+        <p class="skill-dna-intro" data-aos="fade-up" data-aos-delay="50">
+          A living map of the systems, tooling, and product instincts that shape how I build.
+        </p>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="50">
-              <div class="skill-icon">
-                <img src="./src/png/ts.png" alt="TypeScript logo" />
-              </div>
-              <span class="skill-name">TypeScript</span>
-            </li>
+        <div class="skill-dna-shell" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-dna-stage" aria-label="Interactive SkillDNA graph">
+            <div class="skill-dna-backdrop" aria-hidden="true"></div>
+            <svg class="dna-canvas" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="skill-icon">
-                <img src="./src/png/cpplogo.png" alt="C++ logo" />
+            <div class="skill-dna-graph">
+              <div class="origin-node-wrap" aria-label="Chirag, the center of the graph">
+                <div class="origin-node">
+                  <img src="src/png/avatar2.png" alt="Chirag avatar" class="origin-node-avatar" />
+                </div>
+                <p class="origin-node-label">CHIRAG</p>
               </div>
-              <span class="skill-name">C++</span>
-            </li>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="150">
-              <div class="skill-icon">
-                <img src="./src/png/psql.png" alt="PostgreSQL logo" />
-              </div>
-              <span class="skill-name">PostgreSQL</span>
-            </li>
+              <article
+                class="domain-node domain-node--infra"
+                data-domain="infra"
+                tabindex="0"
+                aria-label="Infra and DevOps skill cluster"
+              >
+                <div class="domain-node-header">
+                  <span class="domain-node-kicker">[ Infra &amp; DevOps ]</span>
+                  <span class="domain-node-meta">Scale, pipelines, orchestration</span>
+                </div>
+                <div class="skill-tiles-grid" aria-label="Infra and DevOps technologies"></div>
+              </article>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="skill-icon">
-                <img src="./src/png/react.png" alt="React logo" />
-              </div>
-              <span class="skill-name">React</span>
-            </li>
+              <article
+                class="domain-node domain-node--ai"
+                data-domain="ai"
+                tabindex="0"
+                aria-label="Agentic AI skill cluster"
+              >
+                <div class="domain-node-header">
+                  <span class="domain-node-kicker">[ Agentic AI ]</span>
+                  <span class="domain-node-meta">Reasoning systems, retrieval, agents</span>
+                </div>
+                <div class="skill-tiles-grid" aria-label="Agentic AI technologies"></div>
+              </article>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="250">
-              <div class="skill-icon">
-                <img src="./src/png/k8s.png" alt="Kubernetes logo" />
-              </div>
-              <span class="skill-name">Kubernetes</span>
-            </li>
-  
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="skill-icon">
-                <img src="./src/png/github-white-icon.png" alt="GitHub logo" class="needtobeinvert" />
-              </div>
-              <span class="skill-name">GitHub</span>
-            </li>
+              <article
+                class="domain-node domain-node--backend"
+                data-domain="backend"
+                tabindex="0"
+                aria-label="Backend skill cluster"
+              >
+                <div class="domain-node-header">
+                  <span class="domain-node-kicker">[ Backend ]</span>
+                  <span class="domain-node-meta">APIs, data, distributed services</span>
+                </div>
+                <div class="skill-tiles-grid" aria-label="Backend technologies"></div>
+              </article>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="350">
-              <div class="skill-icon">
-                <img src="./src/png/terraform.png" alt="Terraform logo" />
-              </div>
-              <span class="skill-name">Terraform</span>
-            </li>
+              <article
+                class="domain-node domain-node--frontend"
+                data-domain="frontend"
+                tabindex="0"
+                aria-label="Frontend skill cluster"
+              >
+                <div class="domain-node-header">
+                  <span class="domain-node-kicker">[ Frontend ]</span>
+                  <span class="domain-node-meta">Interfaces that ship clearly</span>
+                </div>
+                <div class="skill-tiles-grid" aria-label="Frontend technologies"></div>
+              </article>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="skill-icon">
-                <img src="./src/png/django.png" alt="Django logo" />
-              </div>
-              <span class="skill-name">Django</span>
-            </li>
+              <div class="skill-dna-tooltip tooltip" role="tooltip" hidden></div>
+            </div>
+          </div>
 
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="450">
-              <div class="skill-icon">
-                <img src="./src/png/kafka.png" alt="Kafka logo" />
-              </div>
-              <span class="skill-name">Kafka</span>
-            </li>
-    
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="500">
-              <div class="skill-icon">
-                <img src="./src/png/hadoop.png" alt="Hadoop logo" />
-              </div>
-              <span class="skill-name">Hadoop</span>
-            </li>
-    
-            <li class="tech-stack-box" data-aos="fade-up" data-aos-delay="550">
-              <div class="skill-icon">
-                <img src="./src/png/af.png" alt="Apache Airflow logo" />
-              </div>
-              <span class="skill-name">Airflow</span>
-            </li>
-          </ul>
+          <div class="skill-dna-mobile" aria-label="SkillDNA mobile accordion"></div>
         </div>
       </div>
     </section>
@@ -492,6 +479,7 @@
   <!-- footer ends here -->
 
   <script src="main.js"></script>
+  <script src="skill-dna.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
